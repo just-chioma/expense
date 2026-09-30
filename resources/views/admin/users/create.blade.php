@@ -25,6 +25,7 @@
 </style>
 <div class="form-container">
   <h2>Create User</h2>
+  <h3>New User</h3>
   <form action="{{ route('admin.users.store') }}" method="POST">
     @csrf
     <input type="text" name="name" placeholder="Name" required><br><br>
