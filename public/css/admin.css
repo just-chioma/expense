@@ -1,0 +1,150 @@
+Body{
+  margin: 0px;
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+.main-container{
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar{
+  width: 220px;
+  background-color: rgb(24, 22, 22);
+  color: white;
+  display: block;
+  padding: 20px;
+}
+.sidebar h2{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.sidebar a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.sidebar a:hover{
+  background-color: #333;
+}
+.body-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.header {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+.sub-container{
+  padding: 20px;
+  width: 100%;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.card{
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.card h3{
+  margin: 0px;
+  font-size: 16px;
+  color: #666;
+}
+.card p{
+  font-size: 22px;
+  margin: 10px 0 0;
+  font-weight: bold;
+}
+.logout-btn{
+  width: 100%;
+  background: none;
+  border: none;
+  color: white;
+  text-align: left;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.logout-btn:hover{
+  background-color: #333;
+}
+.action-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    justify-content:center;
+    align-items:center;
+}
+
+.action-buttons a{
+    text-decoration:none;
+}
+
+.action-buttons form{
+    margin:0;
+}
+
+.action-buttons button{
+    padding:8px 14px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    color:#fff;
+    font-size:14px;
+}
+
+.view-btn{
+    background:#0d6efd;
+}
+
+.edit-btn{
+    background:#198754;
+}
+
+.delete-btn{
+    background:#dc3545;
+}
+
+.view-btn:hover{
+    background:#0b5ed7;
+}
+
+.edit-btn:hover{
+    background:#157347;
+}
+
+.delete-btn:hover{
+    background:#bb2d3b;
+}
+
+@media (max-width:768px){
+
+    .action-buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .action-buttons a,
+    .action-buttons form{
+        width:100%;
+    }
+
+    .action-buttons button{
+        width:100%;
+    }
+
+}
